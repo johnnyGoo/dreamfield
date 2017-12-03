@@ -14,6 +14,7 @@
 <div>
     <a href="{{route('home')}}">首页</a>
     <a href="{{route('about')}}">关于</a>
+    <a href="{{route('about')}}">注册</a>
 </div>
     @yield('content')
 
