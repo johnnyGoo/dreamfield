@@ -14,4 +14,4 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/dream_field','StaticPagesController@dream_field');
+Route::get('/about','DreamPagesController@about');

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class StaticPagesController extends Controller
+class DreamPagesController extends Controller
 {
     //
     public function home(){
