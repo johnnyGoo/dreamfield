@@ -11,7 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/about','DreamPagesController@about');
+Route::get('/','PagesController@home')->name('home');
+Route::get('/about','PagesController@about')->name('about');

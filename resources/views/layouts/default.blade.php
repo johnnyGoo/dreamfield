@@ -12,8 +12,11 @@
 <body>
 
 <div>
+    <a href="{{route('home')}}">首页</a>
+    <a href="{{route('about')}}">关于</a>
+</div>
     @yield('content')
 
-</div>
+
 </body>
 </html>
