@@ -13,4 +13,10 @@
 
 Route::get('/','PagesController@home')->name('home');
 Route::get('/about','PagesController@about')->name('about');
+
+Route::get('/signup', 'UsersController@create')->name('signup');
 Route::resource('users', 'UsersController');
+
+Route::get('/login', 'SessionsController@create')->name('login');
+Route::post('/login', 'SessionsController@store')->name('login');
+Route::delete('/logout', 'SessionsController@destroy')->name('logout');

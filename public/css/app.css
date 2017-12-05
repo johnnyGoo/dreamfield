@@ -8363,6 +8363,14 @@ input {
 }
 
 .panel {
-  margin-top: 50px;
+  margin-top: 40px;
+}
+
+#logout {
+  cursor: default;
+}
+
+#logout:hover {
+  background-color: transparent;
 }
 
