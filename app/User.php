@@ -8,8 +8,16 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Notifications\ResetPassword;
 
 class User extends Authenticatable
+{ public function feed()
 {
+    return $this->statuses()
+        ->orderBy('created_at', 'desc');
+}
     use Notifiable;
+    public function statuses()
+    {
+        return $this->hasMany(Status::class);
+    }
 
     /**
      * The attributes that are mass assignable.
